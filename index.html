@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dan's profile course project</title>
+
+    <meta charset="utf-8">
+    <meta name="description" content="Profile Project" />
+    <meta name="author" content="Dan">
+    <meta id="theme-color" name="theme-color" content="#307699">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- AWAIT -->
+    <!-- Must have JQuerry b4 boostrap -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <!-- ASYNC -->
+    <script async src="js/bootstrap.min.js"></script>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli:600" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <header class="row">
+        <div class="icon col-xs-3">
+            <img class="image" src="images/display.svg" alt="A simple picture of a computer.">
+        </div>
+        <div class="title col-xs-9 text-right text-uppercase">
+          <h1 class="name">Daniel Cannova</h1>
+          <h3 class="desc">Programmer</h3>
+        </div>
+      </header>
+
+      <div class="row">
+        <div class="col">
+          <hr/>
+        </div>
+      </div>
+
+      <div class="row banner-row">
+        <div class="col-md-12">
+          <picture>
+            <source media="(max-width: 768px) and (min-width: 460px)" srcset="images/banner_small.jpg">
+            <source media="(max-width: 460px) and (min-width: 350px)" srcset="images/cropped/banner_medium.jpg">
+            <source media="(max-width: 350px)" srcset="images/cropped/banner_small.jpg">
+            <img class="banner img-responsive" src="images/banner_large.jpg" alt="Says 'Programmers should always have a side project'.">
+          </picture>
+        </div>
+      </div>
+
+      <div class="row featured-title-row">
+        <div class="featured-title col-md-12">
+          <h2>Featured Work</h2>
+        </div>
+      </div>
+
+      <main class="row featured-main-row">
+        <section class="featured-content col-sm-4">
+          <picture>
+            <source media="(max-width: 768px)" srcset="images/featured/physics_small.jpg">
+            <img class="featured image center-block img-responsive" alt="A ball bouncing in a parabolic path." src="images/featured/physics_large.jpg" data-toggle="modal" data-target="#physics">
+          </picture>
+          <div class="featured-text text-center">
+            <h3 data-toggle="modal" data-target="#physics">Physics Programming</h3>
+            <p>
+              <a href="http://lmgtfy.com/?q=physics+programming">Find out how.</a> Physics is all around us. Boo!
+            </p>
+          </div>
+        </section>
+        <section class="featured-content col-sm-4">
+          <picture>
+            <source media="(max-width: 768px)" srcset="images/featured/game-programming_small.jpg">
+              <source media="(max-width: 350px)" srcset="images/featured/game-programming_smallest.jpg">
+              <img class="featured image center-block img-responsive" alt="A picture of a space invader with the words 'Game Programming'." src="images/featured/game-programming_large.jpg" data-toggle="modal" data-target="#gameprogramming">
+          </picture>
+          <div class="featured-text text-center">
+            <h3 data-toggle="modal" data-target="#gameprogramming">Game Programming</h3>
+            <p>
+              <a href="http://lmgtfy.com/?q=game+programming">It is fun!</a> Like all good things, this takes time.
+            </p>
+          </div>
+        </section>
+        <section class="featured-content col-sm-4">
+          <picture>
+            <source media="(max-width: 768px)" srcset="images/featured/ai-head_small.jpg">
+            <source media="(max-width: 350px)" srcset="images/featured/ai-head_smallest.jpg">
+            <img class="featured image center-block img-responsive" alt="A 2D image of a brain that looks like a circuit board with many colors." src="images/featured/ai-head_large.jpg" data-toggle="modal" data-target="#ai-programming">
+          </picture>
+          <div class="featured-text text-center">
+            <h3 data-toggle="modal" data-target="#ai-programming">AI Programming</h3>
+            <p>
+              <a href="http://lmgtfy.com/?q=ai+programming">Enhance our race!</a> Lets not let this go to our heads people. ☺
+            </p>
+          </div>
+        </section>
+      </main>
+    </div>
+
+<!-- Modal : Physics -->
+    <div class="modal fade" id="physics" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Physics is cool!</h4>
+                </div>
+                <div class="modal-body">
+                  <picture>
+                    <source media="(max-width: 768px) and (min-width: 460px)" srcset="images/modal/physics-modal_medium.jpg">
+                    <source media="(max-width: 460px)" srcset="images/modal/physics-modal_small.jpg">
+                    <img class="image img-responsive" src="images/modal/physics-modal_large.jpg" alt="An image with a dinosaur saying, 'Dr. DinoSarus' true science facts. Yeah, You're made of star stuff. But so is Garbage so calm down. And there's microscopic mites making babies on your face right now. Also start stuff.'.">
+                  </picture>
+                  <p>
+                      I want to give you some more information. I think this topic is important and it would benifit you to learn more about this. Thank you for taking your time to read this.
+                  </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- END Modal -->
+
+<!-- Modal : Game Programming -->
+    <div class="modal fade" id="gameprogramming" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Woah! Game Programming.</h4>
+                </div>
+                <div class="modal-body">
+                  <picture>
+                    <source media="(max-width: 768px) and (min-width: 460px)" srcset="images/modal/gameprogramming-modal_medium.jpg">
+                    <source media="(max-width: 460px)" srcset="images/modal/gameprogramming-modal_small.jpg">
+                    <img class="image img-responsive" src="images/modal/gameprogramming-modal_large.jpg" alt="A lot of unreadable code.">
+                  </picture>
+                  <p>
+                      I want to give you some more information. I think this topic is important and it would benifit you to learn more about this. Thank you for taking your time to read this.
+                  </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- END Modal -->
+
+<!-- Modal : ai -->
+    <div class="modal fade" id="ai-programming" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Artificial Intelligence.</h4>
+                </div>
+                <div class="modal-body">
+                  <picture>
+                    <source media="(max-width: 768px) and (min-width: 460px)" srcset="images/modal/ai-programming-modal_medium.jpg">
+                    <source media="(max-width: 460px)" srcset="images/modal/ai-programming-modal_small.jpg">
+                    <img class="image img-responsive" src="images/modal/ai-programming-modal_large.jpg" alt="Picture of an A.I., Glados, from the game Portal.">
+                  </picture>
+                  <p>
+                      I want to give you some more information. I think this topic is important and it would benifit you to learn more about this. Thank you for taking your time to read this.
+                  </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- END Modal -->
+
+    <footer>
+      <hr>
+    </footer>
+  </body>
+</html>
