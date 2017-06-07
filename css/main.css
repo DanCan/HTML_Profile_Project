@@ -105,25 +105,22 @@ hr {
 
 @media only screen and (max-width: 460px) {
 
-    h1 {
-        font-size: 26px;
-    }
+  h1 {
+      font-size: 26px;
+  }
 
-    h2 {
-        font-size: 18px;
-    }
+  h2 {
+      font-size: 18px;
+  }
 
-    h3 {
-        font-size: 14px
-    }
+  h3 {
+      font-size: 14px
+  }
 
-    body {
-      font-size: 12px;
-    }
+  body {
+    font-size: 12px;
+  }
 
-}
-
-@media only screen and (max-width: 349px) {
   .featured-content {
     flex-direction: column;
   }
