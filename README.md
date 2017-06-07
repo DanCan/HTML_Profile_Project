@@ -2,3 +2,5 @@
 A profile project from my Udacity course.
 
 Hosted via github @ https://dancan.github.io/HTML_Profile_Project/
+
+* Try to get your browswer below 350px to show a even slimmer view.
